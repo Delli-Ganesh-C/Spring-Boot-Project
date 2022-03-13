@@ -25,8 +25,7 @@ public class UserService {
 		RestTemplate restTemplate = new RestTemplate();
 		
 		User[] users = restTemplate.getForObject(dataUrl, User[].class);
-		List<User> allUsers = Arrays.asList(users);
-		List<User> user = userRepository.saveAll(allUsers);
+		List<User> user = userRepository.saveAll(Arrays.asList(users));
 		
 		return user;
 	}
