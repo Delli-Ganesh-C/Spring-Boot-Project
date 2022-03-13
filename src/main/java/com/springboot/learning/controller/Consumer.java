@@ -1,4 +1,4 @@
-package com.springboot.learning.rest;
+package com.springboot.learning.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
