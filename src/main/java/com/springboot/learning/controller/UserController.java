@@ -32,4 +32,10 @@ public class UserController {
 	public List<User> create() {
 		return userService.addUser();
 	}
+
+	@GetMapping(value = "demo")
+	public List<User> demo() {
+		return userService.addUser();
+	}
+
 }
